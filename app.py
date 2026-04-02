@@ -182,7 +182,7 @@ def update_results(n_clicks, mode, rent, groceries, utilities, other, people):
     ])
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=port)
+    app.run_server(host="0.0.0.0", port=port)
 
 #if __name__ == "__main__":
 #    app.run(debug=True)
