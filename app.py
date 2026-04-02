@@ -5,6 +5,9 @@ from calculator import calculate_contributions
 from components.expenses import expenses_layout
 from components.people import people_layout
 from components.results import results_layout
+import os
+
+port = int(os.environ.get("PORT", 8050))
 
 def safe_float(val):
     try:
@@ -178,6 +181,8 @@ def update_results(n_clicks, mode, rent, groceries, utilities, other, people):
         ]
     ])
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=port)
+
+#if __name__ == "__main__":
+#    app.run(debug=True)
