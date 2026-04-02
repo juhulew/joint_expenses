@@ -182,7 +182,9 @@ def update_results(n_clicks, mode, rent, groceries, utilities, other, people):
     ])
 
 if __name__ == "__main__":
-    app.run_server(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 8050))
+    debug = os.environ.get("RENDER") is None  # debug only locally
+    app.run(host="0.0.0.0", port=port, debug=debug)
 
 #if __name__ == "__main__":
 #    app.run(debug=True)
