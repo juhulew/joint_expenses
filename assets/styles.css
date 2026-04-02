@@ -76,8 +76,7 @@ button.remove-btn {
     box-shadow: 0 2px 5px rgba(70, 37, 37, 0.1);
     cursor: pointer;
     padding: 0px 0px;
-    position: absolute;
-    text-align: bottom;
+    position: relative;
     bottom: 0px;
 }
 
@@ -98,7 +97,7 @@ button.remove-btn:hover {
 /* ----- people card and rows ----- */
 .people-row {
     display: grid;
-    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-columns: auto 1fr 1fr 40px;
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
