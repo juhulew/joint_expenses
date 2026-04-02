@@ -1,0 +1,10 @@
+remove button
+warning when no income, but no error
+0 spending when no expenses (maybe warning?)
+space above main
+mobile version
+executable programm/app/hosting?
+Better heading?
+name for tab (if website/app)
+spar-inputs
+name for expense still there after input

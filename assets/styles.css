@@ -1,0 +1,202 @@
+/* ----- Page background ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #187272;
+}
+
+/* ----- Main container ----- */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #187272;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+/* ----- Headings ----- */
+h1 {
+    text-align: center;
+    color: #1f2020;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #1f2020;
+}
+
+/* ----- Inputs ----- */
+input {
+    border: 1px solid #187272;
+    border-radius: 6px;
+    padding: 8px;
+    transition: all 0.2s ease;
+}
+
+/* --- Input focus --- */
+input:focus,
+input:focus-visible {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #187272 !important;
+    border-color: #187272 !important;
+}
+
+/* --- Radio buttons --- */
+input[type="radio"] {
+    accent-color: #187272;
+}
+
+/* ----- Buttons ----- */
+button {
+    background-color: #187272;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 12px;
+}
+
+/* --- Button hover --- */
+button:hover {
+    background-color: #187272;
+}
+
+/* ----- Remove button (red) ----- */
+button.remove-btn {
+    background-color: #8B4646;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(70, 37, 37, 0.1);
+    cursor: pointer;
+    padding: 0px 0px;
+    position: absolute;
+    text-align: bottom;
+    bottom: 0px;
+}
+
+button.remove-btn:hover {
+    background-color: #8B4646;
+}
+
+/* ----- Section cards ----- */
+.card {
+    background-color: #bcebeb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    gap: 10px;
+}
+
+/* ----- people card and rows ----- */
+.people-row {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.people-row label {
+    font-weight: 500;
+    color: #0f4b4b;
+    width: auto;
+    display: flex;
+}
+
+.people-row input {
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.people-row button {
+    height: 36px;
+    min-width: 36px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- expenses rows ----- */
+.expense-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 6px;
+}
+
+.expense-row label {
+    font-weight: 500;
+    color: #0f4b4b;
+    width: 120px;
+}
+
+.expense-row input {
+    flex: 1;
+    width: 200px;
+}
+
+/* ----- Result rows ----- */
+.result-row {
+    padding: 8px;
+    border-bottom: 1px solid #187272;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.result-total-row {
+    margin-bottom: 15px;
+}
+
+.result-total-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.result-total-value {
+    margin-left: 10px;
+}
+
+.result-name {
+    font-weight: bold;
+}
+
+.result-amount {
+    margin-left: 10px;
+}
+
+.result-percentage {
+    color: gray;
+    margin-left: 10px;
+}
+
+/* ----- Warning text ----- */
+.warning {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
